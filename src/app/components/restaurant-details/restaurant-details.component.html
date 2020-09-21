@@ -1,0 +1,13 @@
+<h1>Restaurant Details:</h1>
+
+<mat-grid-list cols="6" rowHeight="40px">
+    <mat-grid-tile [colspan]="3" [rowspan]="6">
+        <img [src]="resDetails?.featured_image" alt="featured_image" width="100%">
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Name:</strong> {{resDetails?.name}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Cuisines:</strong> {{resDetails?.cuisines}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Timings:</strong> {{resDetails?.timings}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Phone numbers:</strong> {{resDetails?.phone_numbers}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Address:</strong> {{resDetails?.location?.address}}</mat-grid-tile>
+    <mat-grid-tile [colspan]="3"><strong>Rating:</strong> {{resDetails?.user_rating?.aggregate_rating}}/5.0</mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,11 @@
+<div style="text-align:center">
+    <mat-grid-list cols="12" rowHeight="384px">
+        <mat-grid-tile>Name: {{description?.name}}</mat-grid-tile>
+        <mat-grid-tile>Cuisines: {{description?.cuisines}}</mat-grid-tile>
+        <mat-grid-tile>Timings: {{description?.timings}}</mat-grid-tile>
+        <mat-grid-tile>Phone numbers: {{description?.phone_numbers}}</mat-grid-tile>
+        <mat-grid-tile>Address: {{description?.location?.address}}</mat-grid-tile>
+        <mat-grid-tile>Rating: {{description?.user_rating?.aggregate_rating}}/5.0</mat-grid-tile>
+    </mat-grid-list>
+    <button mat-raised-button color="accent" (click)="showMoreDetails(description?.id)">More details</button>
+</div>
